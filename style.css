@@ -4,15 +4,16 @@
    ========================================================================== */
 
 :root {
-  --color-bg: #EFEDE6;
-  --color-bg-raised: #F6F5F0;
-  --color-ink: #232320;
-  --color-ink-soft: #5B5952;
-  --color-ink-faint: #8C897E;
-  --color-line: #D3CFC2;
-  --color-accent: #26414A;
-  --color-accent-soft: #DCE3DF;
-  --color-cream: #F6F5F0;
+  --color-bg: #ECF5F3;
+  --color-bg-raised: #F6FBFA;
+  --color-ink: #14262A;
+  --color-ink-soft: #46605F;
+  --color-ink-faint: #7C9593;
+  --color-line: #C6DEDA;
+  --color-accent: #08706C;
+  --color-accent-bright: #0ABAB5;
+  --color-accent-soft: #D6EDE9;
+  --color-cream: #F6FBFA;
 
   --font-display: "Noto Serif TC", "Source Han Serif TC", serif;
   --font-body: "Noto Sans TC", "Source Han Sans TC", sans-serif;
@@ -84,7 +85,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(239, 237, 230, 0.88);
+  background: rgba(236, 245, 243, 0.88);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--color-line);
 }
@@ -188,17 +189,18 @@ a {
   font-size: 0.85rem;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--color-cream);
-  background: var(--color-accent);
+  color: var(--color-ink);
+  background: var(--color-accent-bright);
   padding: 0.9rem 1.6rem;
-  border: 1px solid var(--color-accent);
-  transition: background 0.25s ease, color 0.25s ease;
+  border: 1px solid var(--color-accent-bright);
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
 
 .button:hover,
 .button:focus-visible {
-  background: transparent;
-  color: var(--color-accent);
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-cream);
 }
 
 .hero__figure {
