@@ -1,6 +1,6 @@
 /* ==========================================================================
    House Lee — 個人品牌網站
-   簡約文青：襯線標題 + 無襯線內文 + mono 標籤，米白灰階 + 一個沉穩點綴色
+   簡約文青：黑體標題 + 黑體內文 + mono 標籤，淡藍綠米白 + 蒂芬妮藍點綴
    ========================================================================== */
 
 :root {
@@ -15,8 +15,8 @@
   --color-accent-soft: #D6EDE9;
   --color-cream: #F6FBFA;
 
-  --font-display: "Noto Serif TC", "Source Han Serif TC", serif;
-  --font-body: "Noto Sans TC", "Source Han Sans TC", sans-serif;
+  --font-display: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", sans-serif;
+  --font-body: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", sans-serif;
   --font-mono: "IBM Plex Mono", "Noto Sans TC", monospace;
 
   --content-max: 1180px;
@@ -169,11 +169,11 @@ a {
 
 .hero__title {
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 700;
   font-size: clamp(1.9rem, 4vw, 3.1rem);
-  line-height: 1.35;
+  line-height: 1.4;
   margin: 0 0 1.5rem;
-  letter-spacing: 0.005em;
+  letter-spacing: -0.01em;
 }
 
 .hero__subtitle {
